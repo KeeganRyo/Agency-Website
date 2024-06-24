@@ -1,0 +1,573 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+section{
+    min-height: 100vh;
+    box-sizing: border-box; 
+    border: 2px white solid;
+}
+
+.servicesSection{
+    min-height: 0vh;
+}
+
+nav{
+    /* border: 2px red solid; */
+    display: flex;
+    align-items: center;
+    margin-top: 4%;
+}
+
+/* ===================================================================================================== */
+
+
+/* .meshBG{
+    position: absolute;
+    z-index: -10;
+    background-color: rgb(126, 44, 226);
+    min-height: 110vh;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    filter: blur(80px);
+    
+} */
+.yellowbg1{
+    position: absolute;
+    z-index: -9;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: rgb(243, 255, 73);
+    animation: yellow1 20s infinite;
+}
+@keyframes yellow1 {
+    0%,100%{
+        top: -100px;
+    }
+    30%{
+        left: 100px;
+    }
+    70%{
+        top: 200px;
+    }
+}
+.yellowbg2{
+    position: absolute;
+    z-index: -9;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: rgb(243, 255, 73);
+    top: 75%;
+    left: 50%;
+    animation: yellow2 20s infinite;
+}
+@keyframes yellow1 {
+    0%,100%{
+        top: -100px;
+    }
+    30%{
+        right: 100px;
+    }
+    70%{
+        top: 200px;
+    }
+}
+.yellowbg3{
+    position: absolute;
+    z-index: -9;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: rgb(243, 255, 73);
+    top: 15%;
+    left: 45%;
+    animation: yellow3 20s infinite;
+}
+@keyframes yellow3 {
+    0%,100%{
+        top: -100px;
+    }
+    30%{
+        left: 100px;
+    }
+    70%{
+        right: 100px;
+    }
+}
+
+/* ===================================================================================================== */
+
+
+.logo{
+    display: flex;
+    align-items: center;
+    margin-left: 7%;
+}
+
+.LogoPP1{
+    width: 10vw;
+    /* border: 2px black solid; */
+}
+
+
+/* ===================================================================================================== */
+
+
+.nav-links{
+    margin-left: 45%;
+}
+
+ul{
+    /* border: 3px pink solid; */
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.link a{
+    font-size: 1.4vw;
+    position: relative;
+    color: black;
+    font-family: 'Montserrat';
+}
+.link a::after{
+    content: '';
+    width: 0%;
+    background: black;
+    height: 1.6px;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.link a:hover::after{
+    width: 100%;
+} 
+
+/* ===================================================================================================== */
+
+
+.outersap{
+    /* border: 2px pink solid; */
+    margin-left: 4%;
+}
+
+
+.sapBTN{
+    font-family: 'Montserrat';
+    padding: 15px 20px;
+    border-radius: 100px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    background-color: black;
+    font-size: 1.2vw;
+    transition: color 1s, background-color 1s;
+    font-family: 'Montserrat';
+}
+.rightarrow{
+    width: 1vw;
+    margin-left: 1vw;
+    transition: color .6s;
+}
+
+.sapBTN:hover{  
+    .rightarrow{
+        color: black;
+    }
+    background-color: rgb(255, 231, 73);
+    color: black;
+}
+/* ===================================================================================================== */
+
+
+.content{
+    margin-top: 9%;
+    /* border: 2px green solid; */
+}
+.letus{
+    /* border: 2px rgb(98, 98, 0) solid; */
+    margin-left: 7%;
+    font-size: 6vw;
+    font-weight: lighter;
+    margin-bottom: 3%;
+    line-height: 110%;
+    font-family: 'Inter';
+}
+.webelieve{
+    /* border: 2px rgb(154, 154, 0) solid; */
+    margin-left: 7.5%;
+    font-size: 1.5vw;
+    font-family: 'Inter';
+
+}
+
+/* ===================================================================================================== */
+
+
+@media (3500px) {
+    ul{
+        display: none;
+    }
+    .content{
+        text-align: center;
+    }
+    .letus{
+        margin: 0;
+    }
+    .webelieve{
+        margin: 0;
+    } 
+}
+
+/* ===================================================================================================== */
+
+
+
+.workpage{
+    display: flex;
+    flex-direction: column;
+    border-radius: 4%;
+    background-color: black;
+    margin-top: -2%;
+    border: 7px solid rgb(255, 255, 255);
+    border-top: none;
+}
+
+.whContainer{
+    /* border: 2px solid salmon; */
+    margin-bottom: 4vh;
+}
+
+/* ---------- */
+
+.workheader{
+    color: white;
+    font-family: 'Inter';
+    font-size: 4vw;
+    padding: 4%;
+    text-align: center;
+    /* border: 1px solid rgb(255, 0, 0); */
+    cursor: default;
+}
+
+.workContainer1,
+.workContainer2,
+.workContainer3{
+    height: 60vh;
+    /* border: 2px pink solid; */
+    display: flex;
+}
+.workContainer2{
+    height: 77vh;
+}
+.workContainer3{
+    height: 80vh;
+}
+.type1, .type2, .type3,
+.slider-wrapper{
+    flex: 1;
+    /* border: 2px red solid; */
+}
+.type1, .type2, .type3,
+.slider{
+    font-family: 'Inter';
+    color: white;
+    text-align: center;
+    align-items: center;
+    
+}
+.type1 h4, .type2 h4, .type3 h4{
+    font-size: 3vw;
+    font-weight: lighter;
+    margin-top: 10%;
+}
+.type2 h4{
+    margin-top: 15%;
+}
+.type3 h4{
+    margin-top: 15%;
+}
+.type1 p, .type2 p, .type3 p{
+    font-size: 1.7vw;
+    font-weight: lighter;
+    margin-top: 6%;
+    line-height: 6.3vh;
+}
+.laptopContainer{
+    flex: 1;
+}
+.laptopFrame{
+    filter: drop-shadow(0px 0px 100px rgb(82, 82, 82));
+}
+.laptop{
+    /* background-color: aqua; */
+    width: 600px;
+    height: 379px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.laptopDisplay{
+    width: 451px;
+    height: 283px;
+    position: absolute;
+    top: 18px;
+    left: 68px;
+    border-radius: 1px;
+    overflow: scroll;
+    background-color: rgb(0, 0, 0);
+}
+::-webkit-scrollbar{
+    display: none;
+}
+.companyProfile{
+    width: 100%;
+}
+
+/* ---------- */
+
+.phoneContainer{
+    flex: 1;
+}
+.phoneFrame{
+    height: 500px;
+    filter: drop-shadow(0px 0px 40px white);
+}
+.phone{
+    /* background-color: green; */
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    height: 500px;
+    width: 250px;
+}
+.phoneDisplay{
+    width: 220px;
+    height: 472.5px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    border-radius: 28px;
+    overflow: scroll;
+    top: 15px;
+    left: 15px;
+}
+.portofolioAppDisplay{
+    width: 100%;
+}
+
+/* ===================================================================================================== */
+
+
+.logoContainer{
+    display: flex;
+    justify-content: center;
+}
+.LogoPP2{
+    padding: 6vh 0px;
+    width: 9vw;
+    transition: all .5s;
+}
+.LogoPP2:hover{
+    width: 10vw;
+}
+
+/* -------- */
+.textContainer{
+    background-color: #fff961;
+    border-radius: 50px;
+    border: 7px solid rgb(255, 255, 255);
+    text-align: center;
+}
+.servicesText{
+    font-family: 'Inter';
+    padding: 2vw;
+    font-size: 2.5vw;
+    line-height: 8vh;
+}
+
+/* ===================================================================================================== */
+
+.contactSection{
+    /* background-color: black; */
+}
+.contactContainer{
+    /* border: 2px solid yellow; */
+    background-color: white;
+    border-radius: 4%;
+    /* border-top: none; */
+}
+.CtextContainer{
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid red; */
+    margin: 7vw;
+}
+
+.contactText{
+    font-family: 'Montserrat';
+    font-size: 6vw;
+}
+.contactText2{
+    margin-top: 4vh;
+    font-size: 2vw;
+    font-family: 'Montserrat';
+}
+
+/* ---------------------------------*/
+
+.input1,.input2,.input3,.input4{
+    font-family: 'Montserrat';
+    margin: 7vw;
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid blue; */
+    line-height: 120%;
+    font-size: 1.8em
+}
+input:focus {
+    outline: none;
+}  
+input{
+    border: none;
+    border-bottom: 2px solid silver;
+    padding: 1.25em 0;
+    font-size: 1em;
+    width: 50%;
+}
+
+textarea:focus{
+    outline: none;
+}
+.input{
+    font-family: inherit;
+    border: none;
+    border-bottom: 2px solid silver;
+    padding: 1em 0;
+    font-size: 1em;
+    height: 20vh;
+    width: 50%;
+    /* border: 2px solid black; */
+}
+/* --------------- */
+.smBtnContainer{
+    /* border: 2px solid blue; */
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 10vh;
+}
+
+.smBtn{
+    width: fit-content;
+    font-family: 'Montserrat';
+    padding: 1.5%;
+    border-radius: 100px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    background-color: black;
+    font-size: 1.5vw;
+    transition: color 1s, background-color 1s;
+    font-family: 'Montserrat';
+}
+.smBtn:hover{
+    background-color: rgb(255, 231, 73);
+    color: black;
+}
+
+/* ===================================================================================================== */
+footer{
+    display: flex;
+}
+.footerSection{
+    background-color: rgb(0, 0, 0);
+    min-height: 40vh;
+    border: none;
+    border-radius: 90px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.left{
+    /* border: 2px solid beige; */
+    width: 30%;
+    margin-top: 5%;
+    margin-left: 9%;
+}
+.whitePPlogo{   
+    width: 9vw;
+}
+
+.right{
+    margin-top: 5%;
+    width: 70%;
+}
+
+.rightUp{
+    display: flex;
+    /* border: 1px solid rgb(150, 118, 181); */
+}
+
+.ru1,.ru2,.ru3{
+    color: white;
+    font-family: 'Montserrat';
+    /* border: 1px solid rebeccapurple; */
+}
+.ru1{
+    font-size: 90%;
+}
+.ru2{
+    margin-left: 10%;
+    display: flex;
+    margin-right: 5%;
+}
+.ru3{
+    margin-left: 30%;
+}
+.footerWork{
+    margin-top: 30%;
+}
+
+
+
+/* icon wa tiktok ig */
+
+.waLogo, .ttLogo, .igLogo{
+    height: 35%;
+    width: auto;
+    margin-left: 50%;
+}
+
+.rightDown{
+    margin-top: 5%;
+    display: flex;
+}
+
+.rd1, .rd2, .rd3{
+    color: rgb(117, 117, 117);
+    font-family: 'Montserrat';
+    font-weight: bolder;
+    font-size: 80%;
+}
+.rd2{
+    margin-left: 19%;
+}
+.rd3{
+    margin-left: 17%;
+}
+
